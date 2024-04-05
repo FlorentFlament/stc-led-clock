@@ -4,6 +4,12 @@ SDCCOPTS ?= --iram-size 256 --code-size $(STCCODESIZE) --data-loc 0x30 --disable
 SRC = src/adc.c src/ds1302.c src/timer.c src/display.c src/utility.c src/serial.c src/sound.c
 OBJ=$(patsubst src%.c,build%.rel, $(SRC))
 
+STCGAL ?= stcgal
+STCGALPORT ?= /dev/ttyUSB0
+STCGALPROT ?= stc15
+FLASHFILE ?= main.hex
+SYSCLK ?= 22184
+
 .PHONY : doall
 
 all: main

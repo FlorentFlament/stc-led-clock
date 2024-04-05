@@ -20,8 +20,8 @@
 // Begin Hardware Option configuration
 //---------------------------------------------------------------------------
 
-#define BOARD_TALKING      FALSE
-#define BOARD_BLUE_6       TRUE
+#define BOARD_TALKING      TRUE
+#define BOARD_BLUE_6       FALSE
 #define BOARD_BLUE_5_RELAY FALSE
 #define BOARD_YELLOW_5     FALSE
 #define BOARD_YELLOW_SMALL FALSE
@@ -31,8 +31,8 @@
 #define COMMON_ANODE   TRUE
 #define COMMON_CATHODE FALSE
 
-#define PROC_IS_15W408AS FALSE
-#define PROC_IS_15W404AS TRUE
+#define PROC_IS_15W408AS TRUE
+#define PROC_IS_15W404AS FALSE
 #define PROC_IS_15F204EA FALSE
 
 #define HAS_LDR TRUE
